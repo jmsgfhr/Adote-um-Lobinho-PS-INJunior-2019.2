@@ -1,7 +1,9 @@
+/* Header */
 .navbar{
-    position: fixed;
+    position: sticky;
     background: #85CDF5;
     width: 100%;
+    top: 0;
     text-align: center;
 }
 .container{
@@ -60,6 +62,41 @@
     position: relative;
     top: 10%;
 }
+
+/* Main */
+
+.intro{
+    width: 100%;
+    max-height: 400px;
+}
+.div-intro{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+.h1-main{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5em;
+    margin: 0 auto;
+}
+.h1-main::after{
+    content: "";
+    display: block;
+    background-color: #333333;
+    height: 5px;
+    width: 100px;
+    margin: 0 auto;
+    transition: .3s;
+}
+.h1-main:hover:after{
+    width: 150px;
+    transition: .3s;
+}
+
+/* Footer */
+
 .footer{
     position: absolute;
     bottom: 0;
