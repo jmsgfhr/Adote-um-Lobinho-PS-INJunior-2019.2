@@ -1,0 +1,346 @@
+/* Header */
+.navbar{
+    position: sticky;
+    background: #85CDF5;
+    width: 100%;
+    top: 0;
+    text-align: center;
+}
+.container{
+    width: 960px;
+    height: 152px;
+    margin: 0 auto;
+}
+.left-btn{
+    position: relative;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: #333333;
+    float: left;
+    top: 40%;
+}
+.left-btn::after{
+    content: "";
+    display: block;
+    background-color: #333333;
+    height: 5px;
+    width: 0%;
+    transition: .3s;
+}
+.left-btn:hover:after{
+    width: 100%;
+    transition: .3s;
+}
+.right-btn{
+    position: relative;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    color: #333333;
+    float: right;
+    top: 40%;
+}
+.right-btn::after{
+    content: "";
+    display: block;
+    background-color: #333333;
+    height: 5px;
+    width: 0%;
+    float: right;
+    transition: .3s;
+}
+.right-btn:hover:after{
+    width: 100%;
+    transition: .3s;
+}
+.img-logo{
+    position: relative;
+    top: 10%;
+}
+
+/* Main */
+
+.intro{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    width: 100%;
+    max-height: 500px;
+    background-color: #333333;
+    height: 500px;
+    color: #fafafa
+}
+.div-intro{
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+.h1-main{
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5em;
+    margin: 0 auto;
+}
+.h1-main::after{
+    content: "";
+    display: block;
+    background-color: #fafafa;
+    height: 5px;
+    width: 100px;
+    margin: 0 auto;
+    transition: .3s;
+}
+.h1-main:hover:after{
+    width: 150px;
+    transition: .3s;
+}
+
+/* Sobre */
+
+.sobre{
+    background-color: #2C5680;
+    width: 100%;
+    height: 300px;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    color: #fafafa;
+    padding: 50px 0;
+    line-height: 25px;
+}
+.div-sobre{
+    text-align: center;
+}
+.title{
+    color: #DEB959;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Valores */
+
+.valores{
+    background-color: #333333;
+    width: 100%;
+    height: 500px;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    color: #fafafa;
+    padding: 50px 0;
+}
+.div-valores{
+    text-align: center;
+}
+.valores-conteiner{
+    display: inline-block;
+}
+.one-valor{
+    width: 20%;
+    float: left;
+    margin: 0 20px;
+}
+.valor-title{
+    color: #fafafa;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.valor-title::before{
+    content: "";
+    display: block;
+    background-color: #fafafa;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 20px auto;
+}
+.protecao::before{
+    background-image: url(../assets/img/life-insurance.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.carinho::before{
+    background-image: url(../assets/img/care.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.companheirismo::before{
+    background-image: url(../assets/img/Frame.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.resgate::before{
+    background-image: url(../assets/img/rescue-dog.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+/* Exemplos */
+
+.exemplos{
+    width: 100%;
+    background: #fafafa;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: normal;
+    padding: 50px 0;
+}
+.title{
+    margin-bottom: 80px;
+}
+.div-exemplos{
+    height: 1000px;
+    text-align: center;
+}
+.wolf-example{
+    margin: 0 auto;
+    height: 400px;
+    width: 650px;
+}
+.wolf-name{
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
+}
+.age-wolf{
+    font-size: 1em;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.wolf-left{
+    float: left;
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: -30px -30px 0 #2C5680,-30px -30px 0 4px #333333;
+}
+.wolf-about-left{
+    width: 300px;
+    margin-left: 30px;
+    text-align: left;
+    float: right;
+}
+/* right */
+.wolf-example{
+    margin: 0 auto;
+    height: 400px;
+    width: 650px;
+}
+.wolf-name{
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
+}
+.age-wolf{
+    font-size: 1em;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.wolf-right{
+    float: right;
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: 30px -30px 0 #2C5680,30px -30px 0 4px #333333;
+}
+.wolf-about-right{
+    width: 300px;
+    margin-left: 30px;
+    text-align: right;
+    float: right;
+}
+
+/* Footer */
+
+.footer{
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    background: #333333;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    color: #fafafa;
+}
+.footer::before{
+    content: "";
+    display: block;
+    background-image: linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
+    height: 5px;
+    width: 100%;
+}
+.map{
+    max-width: 15%;
+    max-height: 100%;
+    margin: 3% 0;
+    float: left;
+}
+.map-img{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: cover;
+}
+.div-contact-footer{
+    max-height: 80%;
+    max-width: 50%;
+    margin: 0;
+    float: left;
+    margin: 3% 0;
+}
+.div-contact-footer *{
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+.div-contact-footer ul{
+    max-height: 80%;
+    max-width: 100%;
+}
+
+.div-contact-footer ul li p{
+    display: inline;
+}
+.contact-btn{
+    width: 100px;
+    height: 30px;
+    background-color: #DEB959;
+    color: #333333;
+    font-weight: bold;
+    bottom: 0;
+    padding: 0 5px;
+}
+.contact-btn:hover{
+    background-color: #fafafa;
+}
+.glyph{
+    max-width: 15px;
+    max-height: 19px;
+    object-fit: cover;
+    float: left;
+}
+.paws{
+    max-height: 10%;
+    max-width: 80%;
+    float: right;
+    margin: 3% 0;
+}
+.paws-img{
+    max-width: 100%;
+    max-height: 90px;
+    object-fit: cover;
+}
