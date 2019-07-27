@@ -58,4 +58,80 @@
 }
 .img-logo{
     position: relative;
+    top: 10%;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #333333;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    color: #ffffff;
+}
+.footer::before{
+    content: "";
+    display: block;
+    background-image: linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
+    height: 5px;
+    width: 100%;
+}
+.map{
+    max-width: 15%;
+    max-height: 100%;
+    margin: 3% 0;
+    float: left;
+}
+.map-img{
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: cover;
+}
+.div-contact-footer{
+    max-height: 80%;
+    max-width: 50%;
+    margin: 0;
+    float: left;
+    margin: 3% 0;
+}
+.div-contact-footer *{
+    margin-bottom: 5px;
+    margin-left: 7px;
+}
+.div-contact-footer ul{
+    max-height: 80%;
+    max-width: 100%;
+}
+
+.div-contact-footer ul li p{
+    display: inline;
+}
+.contact-btn{
+    width: 100px;
+    height: 30px;
+    background-color: #DEB959;
+    color: #333333;
+    font-weight: bold;
+    bottom: 0;
+    padding: 0 5px;
+}
+.contact-btn:hover{
+    background-color: #ffffff;
+}
+.glyph{
+    max-width: 15px;
+    max-height: 19px;
+    object-fit: cover;
+    float: left;
+}
+.paws{
+    max-height: 10%;
+    max-width: 80%;
+    float: right;
+    margin: 3% 0;
+}
+.paws-img{
+    max-width: 100%;
+    max-height: 90px;
+    object-fit: cover;
 }
