@@ -72,7 +72,7 @@
     max-height: 500px;
     background-color: #333333;
     height: 500px;
-    color: #ffffff
+    color: #fafafa
 }
 .div-intro{
     width: 40%;
@@ -89,7 +89,7 @@
 .h1-main::after{
     content: "";
     display: block;
-    background-color: #ffffff;
+    background-color: #fafafa;
     height: 5px;
     width: 100px;
     margin: 0 auto;
@@ -105,11 +105,12 @@
 .sobre{
     background-color: #2C5680;
     width: 100%;
-    height: 400px;
+    height: 300px;
     font-family: Darker Grotesque;
     font-style: normal;
-    color: #ffffff;
+    color: #fafafa;
     padding: 50px 0;
+    line-height: 25px;
 }
 .div-sobre{
     text-align: center;
@@ -123,6 +124,82 @@
     margin-bottom: 20px;
 }
 
+/* Valores */
+
+.valores{
+    background-color: #333333;
+    width: 100%;
+    height: 500px;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    color: #fafafa;
+    padding: 50px 0;
+}
+.div-valores{
+    text-align: center;
+}
+.valores-conteiner{
+    display: inline-block;
+}
+.one-valor{
+    width: 20%;
+    float: left;
+    margin: 0 20px;
+}
+.valor-title{
+    color: #fafafa;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.valor-title::before{
+    content: "";
+    display: block;
+    background-color: #fafafa;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 20px auto;
+}
+.protecao::before{
+    background-image: url(../assets/img/life-insurance.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.carinho::before{
+    background-image: url(../assets/img/care.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.companheirismo::before{
+    background-image: url(../assets/img/Frame.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.resgate::before{
+    background-image: url(../assets/img/rescue-dog.svg);
+    background-size: 75px;
+    background-position: 15px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+/* Exemplos */
+
+.exemplos{
+    width: 100%;
+    background: #fafafa;
+    font-family: Darker Grotesque;
+    font-style: normal;
+}
+
 /* Footer */
 
 .footer{
@@ -133,7 +210,7 @@
     background: #333333;
     font-family: Darker Grotesque;
     font-style: normal;
-    color: #ffffff;
+    color: #fafafa;
 }
 .footer::before{
     content: "";
@@ -182,7 +259,7 @@
     padding: 0 5px;
 }
 .contact-btn:hover{
-    background-color: #ffffff;
+    background-color: #fafafa;
 }
 .glyph{
     max-width: 15px;
