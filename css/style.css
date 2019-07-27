@@ -282,6 +282,15 @@
     margin: 60px  0;
 }
 
+/* Adoção */
+
+.adocao{
+    width: 100%;
+    font-family: Darker Grotesque;
+    font-style: normal;
+}
+
+
 /* Footer */
 
 .footer{
