@@ -198,6 +198,72 @@
     background: #fafafa;
     font-family: Darker Grotesque;
     font-style: normal;
+    font-weight: normal;
+    padding: 50px 0;
+}
+.title{
+    margin-bottom: 80px;
+}
+.div-exemplos{
+    height: 1000px;
+    text-align: center;
+}
+.wolf-example{
+    margin: 0 auto;
+    height: 400px;
+    width: 650px;
+}
+.wolf-name{
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
+}
+.age-wolf{
+    font-size: 1em;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.wolf-left{
+    float: left;
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: -30px -30px 0 #2C5680,-30px -30px 0 4px #333333;
+}
+.wolf-about-left{
+    width: 300px;
+    margin-left: 30px;
+    text-align: left;
+    float: right;
+}
+/* right */
+.wolf-example{
+    margin: 0 auto;
+    height: 400px;
+    width: 650px;
+}
+.wolf-name{
+    font-size: 2em;
+    font-style: normal;
+    font-weight: bold;
+}
+.age-wolf{
+    font-size: 1em;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.wolf-right{
+    float: right;
+    width: 300px;
+    height: 250px;
+    object-fit: contain;
+    box-shadow: 30px -30px 0 #2C5680,30px -30px 0 4px #333333;
+}
+.wolf-about-right{
+    width: 300px;
+    margin-left: 30px;
+    text-align: right;
+    float: right;
 }
 
 /* Footer */
