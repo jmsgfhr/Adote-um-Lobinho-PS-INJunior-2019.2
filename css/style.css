@@ -66,8 +66,13 @@
 /* Main */
 
 .intro{
+    font-family: Darker Grotesque;
+    font-style: normal;
     width: 100%;
-    max-height: 400px;
+    max-height: 500px;
+    background-color: #333333;
+    height: 500px;
+    color: #ffffff
 }
 .div-intro{
     width: 40%;
@@ -84,7 +89,7 @@
 .h1-main::after{
     content: "";
     display: block;
-    background-color: #333333;
+    background-color: #ffffff;
     height: 5px;
     width: 100px;
     margin: 0 auto;
@@ -95,10 +100,34 @@
     transition: .3s;
 }
 
+/* Sobre */
+
+.sobre{
+    background-color: #2C5680;
+    width: 100%;
+    height: 400px;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    color: #ffffff;
+    padding: 50px 0;
+}
+.div-sobre{
+    text-align: center;
+}
+.title{
+    color: #DEB959;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
 /* Footer */
 
 .footer{
     position: absolute;
+    margin-bottom: 0;
     bottom: 0;
     width: 100%;
     background: #333333;
