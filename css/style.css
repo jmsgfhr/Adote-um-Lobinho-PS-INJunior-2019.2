@@ -282,6 +282,92 @@
     margin: 60px  0;
 }
 
+/* Adoção */
+
+.adocao{
+    width: 100%;
+    height: 600px;
+    font-family: Darker Grotesque;
+    font-style: normal;
+}
+.wolf-adoption-presentation{
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+.wolf-adoption-img{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    float: left;
+}
+.wolf-adoption-text{
+    float: left;
+    margin: 0 50px;
+}
+.wolf-adoption-name{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+.div-adoption-form{
+    width: 100%;
+    font-size: 1.3em;
+    text-align: center;
+}
+.label-wolf-adoption{
+    display: block;
+}
+.ul-input{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.input-adoption{
+    border-bottom: 1px solid #333333;
+}
+.li-name{
+    float: left;
+    width: 90%;
+    margin-bottom: 20px;
+}
+#name{
+    width: 100%;
+}
+.li-age{
+    float: right;
+    width: 8%;
+    margin-bottom: 20px;
+}
+#age{
+    width: 100%;
+}
+.li-email{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#email{
+    width: 100%;
+}
+.submit-adoption{
+    margin: 0  auto;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    background: #2C5680;
+    border: 1px solid #333333;
+    padding: 5px 10px;
+    transition: .3s;
+}
+.submit-adoption:hover{
+    background: #DEB959;
+    transition: .3s;
+}
+
+
 /* Footer */
 
 .footer{
