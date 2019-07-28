@@ -55,6 +55,11 @@ function load() {
                         let newWolfName = document.createElement('h3');
                         newWolfName.classList.add('wolf-name');
                         newWolfName.innerText = wolfs[i].name;
+                        let newWolfId = document.createElement('p');
+                        newWolfId.classList.add('p-id');
+                        newWolfId.innerText = wolfs[i].id;
+                        console.log(newWolfId);
+                        
                         let newWolfAge = document.createElement('p');
                         newWolfAge.classList.add('wolf-age');
                         let newWolfDescription = document.createElement('p');
@@ -95,3 +100,14 @@ function searchFunction() {
         }
     }
 }
+
+let wolfAdoptButton = document.querySelector('.list');
+
+wolfAdoptButton.addEventListener('click', (e) => {
+    if(e.target.nodeName==='BUTTON'){
+        let divList =e.target.parentNode;
+        let pId = divList.querySelector('p');
+        console.log(pId.nodeName);
+        
+    }
+});

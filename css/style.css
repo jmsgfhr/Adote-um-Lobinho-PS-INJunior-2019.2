@@ -696,6 +696,9 @@
 .wolf-right{
     object-fit: cover;
 }
+.p-id{
+    display: none;
+}
 
 .list-left-wolf {
     float: right;
