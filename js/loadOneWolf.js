@@ -62,5 +62,14 @@ window.onload = () => {
         })
 }
 
+let wolfAdoptButton = document.querySelector('.wolf-presentation');
+
+wolfAdoptButton.addEventListener('click', (e) => {
+    if (e.target.nodeName === 'BUTTON' && e.target.innerText === 'Adotar') {
+        localStorage.setItem("wolf-id", localStorage.getItem("wolf-id"));
+        document.location.href = "./adoption.html";
+    }
+});
+
 
 
