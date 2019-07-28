@@ -22,7 +22,7 @@ function load() {
             wolfs = responseAsJson;
         }).then(() => {
             if (page === 'index.html') {
-                
+
             }
             else {
                 for (let i = 0; i < wolfs.length; i++) {
@@ -71,4 +71,27 @@ function load() {
                 }
             }
         })
+}
+
+function searchFunction() {
+
+    var input, filter, list, wolfDiv, a, i, txtValue;
+
+    input = document.querySelector('.search-div .search');
+
+    filter = input.value.toUpperCase();
+
+    list = document.querySelector(".list");
+
+    wolfDiv = document.querySelectorAll('.wolf-list')
+
+    for (i = 0; i < wolfDiv.length; i++) {
+        a = wolfDiv[i].querySelector(".wolf-name");
+        txtValue = a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            wolfDiv[i].style.display = "";
+        } else {
+            wolfDiv[i].style.display = "none";
+        }
+    }
 }
