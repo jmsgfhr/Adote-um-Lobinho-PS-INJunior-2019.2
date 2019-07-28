@@ -650,8 +650,11 @@
 
 .list {
     width: 100%;
-    height: 2000px;
+    min-height: 2000px;
     text-align: center;
+    font-family: Darker Grotesque;
+    font-style: normal;
+    padding-bottom: 100px;
 }
 
 .search-div {
@@ -685,6 +688,13 @@
     margin: 0 auto;
     height: 400px;
     width: 100%;
+}
+
+.wolf-left{
+    object-fit: cover;
+}
+.wolf-right{
+    object-fit: cover;
 }
 
 .list-left-wolf {
