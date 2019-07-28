@@ -255,7 +255,7 @@
 
 .wolf-left {
     float: left;
-    width: 45%;
+    width: 50%;
     height: 250px;
     object-fit: contain;
     box-shadow: -30px -30px 0 #2C5680, -30px -30px 0 4px #333333;
@@ -290,7 +290,7 @@
 
 .wolf-right {
     float: right;
-    width: 45%;
+    width: 50%;
     height: 250px;
     object-fit: contain;
     box-shadow: 30px -30px 0 #2C5680, 30px -30px 0 4px #333333;
@@ -644,7 +644,7 @@
 .search-div {
     width: 100%;
     margin: 50px auto;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
 
 .search {
@@ -658,6 +658,14 @@
     width: 10%;
     height: 31px;
     margin-left: 5%;
+    background-color: #DEB959;
+    transition: .3s;
+    color: #fafafa
+}
+
+.search-btn:hover {
+    background-color: #2C5680;
+    transition: .3s;
 }
 
 .wolf-list {
@@ -668,9 +676,41 @@
 
 .list-left-wolf {
     float: right;
+    width: 100px;
+    height: 30px;
+    background-color: #DEB959;
+    color: #fafafa;
+    transition: .3s;
+}
+
+.list-left-wolf:hover {
+    background-color: #2C5680;
+    transition: .3s;
 }
 
 .list-right-wolf {
+    float: left;
+    width: 100px;
+    height: 30px;
+    background-color: #DEB959;
+    color: #fafafa;
+    transition: .3s;
+}
+
+.list-right-wolf:hover {
+    background-color: #2C5680;
+    transition: .3s;
+}
+
+.wolf-list-left {
+    width: 45%;
+    text-align: left;
+    float: right;
+}
+
+.wolf-list-right {
+    width: 45%;
+    text-align: right;
     float: left;
 }
 
