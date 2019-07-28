@@ -1,17 +1,20 @@
 /* Header */
-.navbar{
+
+.navbar {
     position: sticky;
     background: #85CDF5;
     width: 100%;
     top: 0;
     text-align: center;
 }
-.container{
+
+.container {
     width: 960px;
     height: 152px;
     margin: 0 auto;
 }
-.left-btn{
+
+.left-btn {
     position: relative;
     font-family: Darker Grotesque;
     font-style: normal;
@@ -22,7 +25,8 @@
     float: left;
     top: 40%;
 }
-.left-btn::after{
+
+.left-btn::after {
     content: "";
     display: block;
     background-color: #333333;
@@ -30,11 +34,13 @@
     width: 0%;
     transition: .3s;
 }
-.left-btn:hover:after{
+
+.left-btn:hover:after {
     width: 100%;
     transition: .3s;
 }
-.right-btn{
+
+.right-btn {
     position: relative;
     font-family: Darker Grotesque;
     font-style: normal;
@@ -45,7 +51,8 @@
     float: right;
     top: 40%;
 }
-.right-btn::after{
+
+.right-btn::after {
     content: "";
     display: block;
     background-color: #333333;
@@ -54,18 +61,20 @@
     float: right;
     transition: .3s;
 }
-.right-btn:hover:after{
+
+.right-btn:hover:after {
     width: 100%;
     transition: .3s;
 }
-.img-logo{
+
+.img-logo {
     position: relative;
     top: 10%;
 }
 
 /* Main */
 
-.intro{
+.intro {
     font-family: Darker Grotesque;
     font-style: normal;
     width: 100%;
@@ -74,19 +83,22 @@
     height: 500px;
     color: #fafafa
 }
-.div-intro{
+
+.div-intro {
     width: 40%;
     text-align: center;
     margin: 0 auto;
 }
-.h1-main{
+
+.h1-main {
     font-family: Darker Grotesque;
     font-style: normal;
     font-weight: bold;
     font-size: 5em;
     margin: 0 auto;
 }
-.h1-main::after{
+
+.h1-main::after {
     content: "";
     display: block;
     background-color: #fafafa;
@@ -95,14 +107,15 @@
     margin: 0 auto;
     transition: .3s;
 }
-.h1-main:hover:after{
+
+.h1-main:hover:after {
     width: 150px;
     transition: .3s;
 }
 
 /* Sobre */
 
-.sobre{
+.sobre {
     background-color: #2C5680;
     width: 100%;
     height: 300px;
@@ -112,10 +125,12 @@
     padding: 50px 0;
     line-height: 25px;
 }
-.div-sobre{
+
+.div-sobre {
     text-align: center;
 }
-.title{
+
+.title {
     color: #DEB959;
     font-family: Darker Grotesque;
     font-style: normal;
@@ -126,7 +141,7 @@
 
 /* Valores */
 
-.valores{
+.valores {
     background-color: #333333;
     width: 100%;
     height: 500px;
@@ -135,25 +150,30 @@
     color: #fafafa;
     padding: 50px 0;
 }
-.div-valores{
+
+.div-valores {
     text-align: center;
 }
-.valores-conteiner{
+
+.valores-conteiner {
     display: inline-block;
 }
-.one-valor{
+
+.one-valor {
     width: 20%;
     float: left;
     margin: 0 20px;
 }
-.valor-title{
+
+.valor-title {
     color: #fafafa;
     font-family: Darker Grotesque;
     font-style: normal;
     font-weight: bold;
     font-size: 1.5em;
 }
-.valor-title::before{
+
+.valor-title::before {
     content: "";
     display: block;
     background-color: #fafafa;
@@ -162,28 +182,32 @@
     border-radius: 100px;
     margin: 20px auto;
 }
-.protecao::before{
+
+.protecao::before {
     background-image: url(../assets/img/life-insurance.svg);
     background-size: 75px;
     background-position: 15px;
     background-repeat: no-repeat;
     object-fit: cover;
 }
-.carinho::before{
+
+.carinho::before {
     background-image: url(../assets/img/care.svg);
     background-size: 75px;
     background-position: 15px;
     background-repeat: no-repeat;
     object-fit: cover;
 }
-.companheirismo::before{
+
+.companheirismo::before {
     background-image: url(../assets/img/Frame.svg);
     background-size: 75px;
     background-position: 15px;
     background-repeat: no-repeat;
     object-fit: cover;
 }
-.resgate::before{
+
+.resgate::before {
     background-image: url(../assets/img/rescue-dog.svg);
     background-size: 75px;
     background-position: 15px;
@@ -193,7 +217,7 @@
 
 /* Exemplos */
 
-.exemplos{
+.exemplos {
     width: 100%;
     background: #fafafa;
     font-family: Darker Grotesque;
@@ -201,65 +225,78 @@
     font-weight: normal;
     padding: 50px 0;
 }
-.title{
+
+.title {
     margin-bottom: 80px;
 }
-.div-exemplos{
+
+.div-exemplos {
     height: 1000px;
     text-align: center;
 }
-.wolf-example{
+
+.wolf-example {
     margin: 0 auto;
     height: 400px;
     width: 650px;
 }
-.wolf-name{
+
+.wolf-name {
     font-size: 2em;
     font-style: normal;
     font-weight: bold;
 }
-.age-wolf{
+
+.age-wolf {
     font-size: 1em;
     font-style: normal;
     margin-bottom: 10px;
 }
-.wolf-left{
+
+.wolf-left {
     float: left;
     width: 300px;
     height: 250px;
     object-fit: contain;
-    box-shadow: -30px -30px 0 #2C5680,-30px -30px 0 4px #333333;
+    box-shadow: -30px -30px 0 #2C5680, -30px -30px 0 4px #333333;
 }
-.wolf-about-left{
+
+.wolf-about-left {
     width: 300px;
     margin-left: 30px;
     text-align: left;
     float: right;
 }
+
 /* right */
-.wolf-example{
+
+.wolf-example {
     margin: 0 auto;
     height: 400px;
     width: 650px;
 }
-.wolf-name{
+
+.wolf-name {
     font-size: 2em;
     font-style: normal;
     font-weight: bold;
 }
-.age-wolf{
+
+.age-wolf {
     font-size: 1em;
     font-style: normal;
     margin-bottom: 10px;
 }
-.wolf-right{
+
+.wolf-right {
     float: right;
     width: 300px;
     height: 250px;
     object-fit: contain;
-    box-shadow: 30px -30px 0 #2C5680,30px -30px 0 4px #333333;
+    box-shadow: 30px -30px 0 #2C5680, 30px -30px 0 4px #333333;
 }
-.wolf-about-right{
+
+.wolf-about-right {
     width: 300px;
     margin-left: 30px;
     text-align: right;
@@ -268,7 +305,7 @@
 
 /* About */
 
-.about{
+.about {
     text-align: center;
     font-family: Darker Grotesque;
     font-style: normal;
@@ -276,101 +313,166 @@
     line-height: 20px;
 }
 
-.h2-about{
+.h2-about {
     font-size: 3em;
     font-weight: normal;
-    margin: 60px  0;
+    margin: 60px 0;
 }
 
 /* Adoção */
 
-.adocao{
+.adocao {
     width: 100%;
     height: 600px;
     font-family: Darker Grotesque;
     font-style: normal;
 }
-.wolf-adoption-presentation{
+
+.wolf-adoption-presentation {
     width: 100%;
     height: 200px;
     margin-top: 50px;
 }
-.wolf-adoption-img{
+
+.wolf-adoption-img {
     border-radius: 100px;
     width: 150px;
     height: 150px;
     object-fit: cover;
     float: left;
 }
-.wolf-adoption-text{
+
+.wolf-adoption-text {
     float: left;
     margin: 0 50px;
 }
-.wolf-adoption-name{
+
+.wolf-adoption-name {
     font-size: 3em;
     margin-bottom: 10px;
 }
-.div-adoption-form{
+
+.div-adoption-form {
     width: 100%;
     font-size: 1.3em;
     text-align: center;
 }
-.label-wolf-adoption{
+
+.label-wolf-adoption {
     display: block;
 }
-.ul-input{
+
+.ul-input {
     width: 100%;
     float: left;
     text-align: left;
 }
-.input-adoption{
+
+.input-adoption {
     border-bottom: 1px solid #333333;
 }
-.li-name{
+
+.li-name {
     float: left;
     width: 90%;
     margin-bottom: 20px;
 }
-#name{
+
+#name {
     width: 100%;
 }
-.li-age{
+
+.li-age {
     float: right;
     width: 8%;
     margin-bottom: 20px;
 }
-#age{
+
+#age {
     width: 100%;
 }
-.li-email{
+
+.li-email {
     float: left;
     width: 100%;
     margin-bottom: 20px;
 }
-#email{
+
+#email {
     width: 100%;
 }
-.submit-adoption{
-    margin: 0  auto;
+
+.submit-adoption {
+    margin: 0 auto;
     font-family: Darker Grotesque;
     font-style: normal;
     font-weight: 600;
     font-size: 1.5em;
-    color: #FFFFFF;
+    color: #fafafa;
     background: #2C5680;
     border: 1px solid #333333;
     padding: 5px 10px;
     transition: .3s;
 }
-.submit-adoption:hover{
+
+.submit-adoption:hover {
     background: #DEB959;
     transition: .3s;
 }
 
+/* Contato */
+
+.contact {
+    height: 700px;
+    font-family: Darker Grotesque;
+    font-style: normal;
+}
+
+.div-fale-conosco {
+    width: 80%;
+    height: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.h2-contact {
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 40px;
+}
+.div-contact{
+    display: block;
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+.label-contact{
+    display: block;
+}
+.input-contact{
+    width: 100%;
+    border: 1px solid #333333;
+    background-color: #E6E6E6;
+}
+.submit-contact{
+    background: #2C5680;
+    border: 1px solid #333333;
+    color: #fafafa;
+    padding: 5px 10px;
+    font-size: 1.3em;
+    transition: .3s;
+}
+.submit-contact:hover{
+    background-color: #DEB959;
+    transition: .3s;
+    color: #333333;
+}
 
 /* Footer */
 
-.footer{
+.footer {
     position: absolute;
     margin-bottom: 0;
     bottom: 0;
@@ -380,48 +482,56 @@
     font-style: normal;
     color: #fafafa;
 }
-.footer::before{
+
+.footer::before {
     content: "";
     display: block;
     background-image: linear-gradient(270deg, #2C5680 0%, #DEB959 100%);
     height: 5px;
     width: 100%;
 }
-.about-footer{
+
+.fixed-footer {
     position: fixed;
     bottom: 0;
 }
-.map{
+
+.map {
     max-width: 15%;
     max-height: 100%;
     margin: 3% 0;
     float: left;
 }
-.map-img{
+
+.map-img {
     max-width: 100%;
     max-height: 80%;
     object-fit: cover;
 }
-.div-contact-footer{
+
+.div-contact-footer {
     max-height: 80%;
     max-width: 50%;
     margin: 0;
     float: left;
     margin: 3% 0;
 }
-.div-contact-footer *{
+
+.div-contact-footer * {
     margin-bottom: 5px;
     margin-left: 7px;
 }
-.div-contact-footer ul{
+
+.div-contact-footer ul {
     max-height: 80%;
     max-width: 100%;
 }
 
-.div-contact-footer ul li p{
+.div-contact-footer ul li p {
     display: inline;
 }
-.contact-btn{
+
+.contact-btn {
     width: 100px;
     height: 30px;
     background-color: #DEB959;
@@ -430,22 +540,26 @@
     bottom: 0;
     padding: 0 5px;
 }
-.contact-btn:hover{
+
+.contact-btn:hover {
     background-color: #fafafa;
 }
-.glyph{
+
+.glyph {
     max-width: 15px;
     max-height: 19px;
     object-fit: cover;
     float: left;
 }
-.paws{
+
+.paws {
     max-height: 10%;
     max-width: 80%;
     float: right;
     margin: 3% 0;
 }
-.paws-img{
+
+.paws-img {
     max-width: 100%;
     max-height: 90px;
     object-fit: cover;
