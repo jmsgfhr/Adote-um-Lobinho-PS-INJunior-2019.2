@@ -2,7 +2,14 @@ function load() {
     var path = window.location.pathname;
     var page = path.split("/").pop();
 
-    let list = document.querySelector(".list .container")
+    let list;
+    if (page == 'index.html') {
+        list = document.querySelector(".exemplos .div-exemplos");
+    }
+    else {
+        list = document.querySelector(".list .container");
+    }
+
     const myHeaders = {
         "Content-Type": "application/json"
     }
@@ -22,7 +29,61 @@ function load() {
             wolfs = responseAsJson;
         }).then(() => {
             if (page === 'index.html') {
-
+                let iteration;
+                if (wolfs.length < 2) {
+                    iteration = wolfs.length;
+                }
+                else {
+                    iteration = 2;
+                }
+                for (let i = 0; i < iteration; i++) {
+                    // <div class="wolf-example"></div>
+                    let newWolf = document.createElement('div');
+                    newWolf.classList.add("wolf-example");
+                    // <img class="wolf-left" src="assets/img/rescue-dog.svg"></img>
+                    let newWolfPhoto = document.createElement('img');
+                    let att = document.createAttribute("onerror");
+                    att.value = "imageError(this)";
+                    newWolfPhoto.setAttributeNode(att);
+                    if (i % 2 == 0) {
+                        newWolfPhoto.classList.add('wolf-left');
+                    }
+                    else {
+                        newWolfPhoto.classList.add('wolf-right');
+                    }
+                    newWolfPhoto.src = wolfs[i].photo;
+                    // <div class="wolf-about-left"></div>
+                    let newWolfList = document.createElement('div');
+                    if (i % 2 == 0) {
+                        newWolfList.classList.add("wolf-about-left");
+                    }
+                    else {
+                        newWolfList.classList.add("wolf-about-right");
+                    }
+                    // <h3 class="wolf-name">Nome</h3>
+                    let newWolfName = document.createElement('h3');
+                    newWolfName.classList.add('wolf-name');
+                    newWolfName.innerText = wolfs[i].name;
+                    // <p class="age-wolf">Idade: XX anos</p>
+                    let newWolfAge = document.createElement('p');
+                    newWolfAge.classList.add('wolf-age');
+                    newWolfAge.innerText = `Idade: ${wolfs[i].age} anos`;
+                    // <p class="p-left"></p>
+                    let newWolfDescription = document.createElement('p');
+                    newWolfDescription.innerText = wolfs[i].description;
+                    if (i % 2 == 0) {
+                        newWolfDescription.classList.add('p-left');
+                    }
+                    else {
+                        newWolfDescription.classList.add('p-right');
+                    }
+                    newWolfList.appendChild(newWolfName);
+                    newWolfList.appendChild(newWolfAge);
+                    newWolfList.appendChild(newWolfDescription);
+                    newWolf.appendChild(newWolfPhoto);
+                    newWolf.appendChild(newWolfList);
+                    list.appendChild(newWolf);
+                }
             }
             else {
                 for (let i = 0; i < wolfs.length; i++) {
