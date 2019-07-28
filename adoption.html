@@ -16,21 +16,33 @@
         </div>
     </header>
     <section class="adocao">
-        <div class="container">
+        <div class="container adoption-container">
             <div class="wolf-adoption-presentation">
-                <img src="assets/img/map.png" class="wolf-adoption">
-                <h2 class="wolf-adoption-name">Adote o(a) NomeDoLobo</h2>
-                <p class="wolf-adoption-id">ID:242455756</p>
+                <img src="assets/img/map.png" class="wolf-adoption-img">
+                <div class="wolf-adoption-text">
+                    <h2 class="wolf-adoption-name">Adote o(a) NomeDoLobo</h2>
+                    <p class="wolf-adoption-id">ID:242455756</p>
+                </div>
             </div>
-            <form class="wolf-adoption-form">
-                <label>Nome:<input class="name" placeholder="Example: João da Silva Souza"></label>
-                <label>Idade:<input class="age" placeholder="23"></label>
-                <label>E-mail:<input class="email" placeholder="Example: tortaopr@esquerda.com.br"</label>
-                <button class="submit-adoption">Adotar</button>
-            </form>
-            <form class="form-adocao">
-
-            </form>
+            <div class="div-adoption-form">
+                <form class="wolf-adoption-form">
+                    <ul class="ul-input">
+                        <li class="li-name">
+                            <label for="name" class="label-wolf-adoption">Nome:</label>
+                            <input id="name" placeholder="Example: João da Silva Souza" class="input-adoption">
+                        </li>
+                        <li class="li-age">
+                            <label for="age" class="label-wolf-adoption">Idade:</label>
+                            <input id="age" placeholder="23" class="input-adoption">
+                        </li>
+                        <li class="li-email">
+                            <label for="email" class="label-wolf-adoption">E-mail:</label>
+                            <input id="email" placeholder="Example: tortaopr@esquerda.com.br" class="input-adoption">
+                        </li>
+                    </ul>
+                    <button class="submit-adoption">Adotar</button>
+                </form>
+            </div>
         </div>
     </section>
     <footer class="footer">
