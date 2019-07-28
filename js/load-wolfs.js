@@ -30,6 +30,9 @@ function load() {
                         let newWolf = document.createElement('div');
                         newWolf.classList.add("wolf-list");
                         let newWolfPhoto = document.createElement('img');
+                        let att = document.createAttribute("onerror");
+                        att.value = "imageError(this)";
+                        newWolfPhoto.setAttributeNode(att);
                         if (i % 2 == 0) {
                             newWolfPhoto.classList.add('wolf-left');
                         }
@@ -54,12 +57,11 @@ function load() {
                         newWolfButton.innerText = "Adotar";
                         let newWolfName = document.createElement('h3');
                         newWolfName.classList.add('wolf-name');
+                        let wolfId = document.createElement('p');
+                        wolfId.classList.add('p-id');
+                        wolfId.innerText = i;
                         newWolfName.innerText = wolfs[i].name;
                         let newWolfId = document.createElement('p');
-                        newWolfId.classList.add('p-id');
-                        newWolfId.innerText = wolfs[i].id;
-                        console.log(newWolfId);
-                        
                         let newWolfAge = document.createElement('p');
                         newWolfAge.classList.add('wolf-age');
                         let newWolfDescription = document.createElement('p');
@@ -69,6 +71,7 @@ function load() {
                         newWolfList.appendChild(newWolfName);
                         newWolfList.appendChild(newWolfAge);
                         newWolfList.appendChild(newWolfDescription);
+                        newWolfList.appendChild(wolfId);
                         newWolf.appendChild(newWolfPhoto);
                         newWolf.appendChild(newWolfList);
                         list.appendChild(newWolf);
@@ -104,10 +107,16 @@ function searchFunction() {
 let wolfAdoptButton = document.querySelector('.list');
 
 wolfAdoptButton.addEventListener('click', (e) => {
-    if(e.target.nodeName==='BUTTON'){
-        let divList =e.target.parentNode;
-        let pId = divList.querySelector('p');
-        console.log(pId.nodeName);
-        
+    if (e.target.nodeName === 'BUTTON') {
+        let divList = e.target.parentNode;
+        let pId = divList.querySelector('.p-id');
+        localStorage.setItem("wolf-id", pId.innerText);
+        document.location.href = "./wolf-presentation.html";
     }
 });
+// window.onload = alert(localStorage.getItem("storageName"));
+
+function imageError(e) {
+    e.src = './assets/img/default.svg';
+    e.style.objectFit = "contain";
+}
