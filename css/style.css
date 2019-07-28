@@ -118,7 +118,7 @@
 .sobre {
     background-color: #2C5680;
     width: 100%;
-    height: 300px;
+    height: 400px;
     font-family: Darker Grotesque;
     font-style: normal;
     color: #fafafa;
@@ -255,14 +255,14 @@
 
 .wolf-left {
     float: left;
-    width: 300px;
+    width: 45%;
     height: 250px;
     object-fit: contain;
     box-shadow: -30px -30px 0 #2C5680, -30px -30px 0 4px #333333;
 }
 
 .wolf-about-left {
-    width: 300px;
+    width: 45%;
     margin-left: 30px;
     text-align: left;
     float: right;
@@ -290,15 +290,15 @@
 
 .wolf-right {
     float: right;
-    width: 300px;
+    width: 45%;
     height: 250px;
     object-fit: contain;
     box-shadow: 30px -30px 0 #2C5680, 30px -30px 0 4px #333333;
 }
 
 .wolf-about-right {
-    width: 300px;
-    margin-left: 30px;
+    width: 45%;
+    margin-right: 30px;
     text-align: right;
     float: right;
 }
@@ -539,6 +539,7 @@
     float: left;
     margin-bottom: 30px;
 }
+
 .submit-donate {
     background: #2C5680;
     border: 1px solid #333333;
@@ -556,33 +557,38 @@
 
 /* Wolf-Presentation */
 
-.wolf-presentation{
+.wolf-presentation {
     width: 100%;
     height: 900px;
     font-family: Darker Grotesque;
     font-style: normal;
 }
-.div-wolf-presentation{
+
+.div-wolf-presentation {
     text-align: center;
 }
-.h2-wolf-name{
+
+.h2-wolf-name {
     margin-top: 30px;
     font-size: 2.5em;
     font-weight: bolder;
 }
-.wolf-informations{
+
+.wolf-informations {
     margin-top: 60px;
     width: 40%;
     float: left;
 }
-.img-wolf-presentation{
+
+.img-wolf-presentation {
     float: left;
     box-shadow: -20px -20px 0 #2C5680, -20px -20px 0 4px #333333;
     width: 100%;
     height: 40%;
     display: block;
 }
-.adoption-btn{
+
+.adoption-btn {
     float: left;
     width: 40%;
     height: 40px;
@@ -591,11 +597,13 @@
     font-size: 1.5em;
     color: #fafafa;
 }
-.adoption-btn:hover{
+
+.adoption-btn:hover {
     transition: .3s;
     background-color: green;
 }
-.remove-btn{
+
+.remove-btn {
     float: right;
     width: 40%;
     height: 40px;
@@ -604,22 +612,66 @@
     font-size: 1.5em;
     color: #fafafa;
 }
-.remove-btn:hover{
+
+.remove-btn:hover {
     transition: .3s;
     background-color: red;
 }
-.wolf-presentation-text{
+
+.wolf-presentation-text {
     float: left;
     text-align: left;
     width: 40%;
     margin-left: 10%;
     margin-top: 60px;
 }
-.wolf-presentation-btns{
+
+.wolf-presentation-btns {
     float: left;
     width: 100%;
     display: block;
     margin-top: 60px;
+}
+
+/* Wolf-List */
+
+.list {
+    width: 100%;
+    height: 2000px;
+    text-align: center;
+}
+
+.search-div {
+    width: 100%;
+    margin: 50px auto;
+    margin-bottom: 100px;
+}
+
+.search {
+    width: 80%;
+    height: 30px;
+    border: 1px solid #333333;
+    float: left;
+}
+
+.search-btn {
+    width: 10%;
+    height: 31px;
+    margin-left: 5%;
+}
+
+.wolf-list {
+    margin: 0 auto;
+    height: 400px;
+    width: 100%;
+}
+
+.list-left-wolf {
+    float: right;
+}
+
+.list-right-wolf {
+    float: left;
 }
 
 /* Footer */
