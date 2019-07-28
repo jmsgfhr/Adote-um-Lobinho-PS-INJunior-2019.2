@@ -30,6 +30,9 @@ function load() {
                         let newWolf = document.createElement('div');
                         newWolf.classList.add("wolf-list");
                         let newWolfPhoto = document.createElement('img');
+                        let att = document.createAttribute("onerror");
+                        att.value = "imageError(this)";
+                        newWolfPhoto.setAttributeNode(att);
                         if (i % 2 == 0) {
                             newWolfPhoto.classList.add('wolf-left');
                         }
@@ -54,7 +57,7 @@ function load() {
                         newWolfButton.innerText = "Adotar";
                         let newWolfName = document.createElement('h3');
                         newWolfName.classList.add('wolf-name');
-                        let wolfId= document.createElement('p');
+                        let wolfId = document.createElement('p');
                         wolfId.classList.add('p-id');
                         wolfId.innerText = i;
                         newWolfName.innerText = wolfs[i].name;
@@ -108,7 +111,12 @@ wolfAdoptButton.addEventListener('click', (e) => {
         let divList = e.target.parentNode;
         let pId = divList.querySelector('.p-id');
         localStorage.setItem("wolf-id", pId.innerText);
-        document.location.href = "./wolf-presentation.html" ;
+        document.location.href = "./wolf-presentation.html";
     }
 });
 // window.onload = alert(localStorage.getItem("storageName"));
+
+function imageError(e) {
+    e.src = './assets/img/default.svg';
+    e.style.objectFit = "contain";
+}
